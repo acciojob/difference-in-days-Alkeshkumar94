@@ -10,10 +10,12 @@
 		parseInt(date2.substring(5,7))-1,
 		parseInt(date2.substring(8)),	
 	);
-	var timediff =date2-date1;
-	var days=Math.floor(timediff/(24*60*60*60*1000));
+	var timediff =dat2-dat1;
+	var days=Math.floor(timediff/(24*60*60*1000));
 return days;
+	 
 }
+
 
 
 // Do not change the code below.
