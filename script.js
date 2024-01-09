@@ -1,4 +1,4 @@
-var dateDiffInDays = function (date1, date2) {
+ function  d(date1, date2) {
 	var dat1=Date.UTC(
 		parseInt(dat1.substring(0,4)),
 		parseInt(dat1.substring(5,7))-1,
@@ -11,7 +11,7 @@ var dateDiffInDays = function (date1, date2) {
 		parseInt(dat2.substring(8)),	
 	);
 	var timediff =dat2-dat1;
-	var days=Math.floor(timediff/(24*60*60*60));
+	var days=Math.floor(timediff/(24*60*60*60*1000));
 	return days;
 }
 
@@ -21,6 +21,7 @@ const dateOne = prompt("Enter Start Date.");
 
 const dateTwo = prompt("Enter End Date.");
 
-alert(dateDiffInDays(dateOne, dateTwo));
+alert(d(dateOne, dateTwo));
+
 
 
